@@ -9,6 +9,7 @@ import { Color, Hero } from '../../interfaces/hero.interface';
 })
 export class OrderComponent   {
   public menuItems: MenuItem[]=[];
+public orderBy?:keyof Hero ;
 
 public isUpperCase:boolean=false;
 public heroes: Hero[]=[
@@ -42,5 +43,9 @@ color: Color.red,
 toggleUpercase():void{
   this.isUpperCase = !this.isUpperCase;
 }
+changeOrder( value: keyof Hero ){
+  this.orderBy = value;
+}
+
 }
 
