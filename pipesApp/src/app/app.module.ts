@@ -9,6 +9,7 @@ import localeEsHN from '@angular/common/locales/es-HN';
 import localeFrCA from '@angular/common/locales/fr-CA';
 
 import { registerLocaleData } from '@angular/common';
+import { ProductsModule } from './products/products.module';
 registerLocaleData(localeEsHN);
 registerLocaleData( localeFrCA );
 
@@ -22,7 +23,8 @@ registerLocaleData( localeFrCA );
     BrowserModule,
 AppRouterModule,
 SharedModule,
-BrowserAnimationsModule
+BrowserAnimationsModule,
+ProductsModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'es-HN' }
