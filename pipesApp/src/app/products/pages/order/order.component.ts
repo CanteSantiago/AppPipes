@@ -34,7 +34,7 @@ color: Color.red,
 },
 {
   name: 'Linterna verde',
-  canFly: false,
+  canFly: true,
 color: Color.red,
 },
 ]
