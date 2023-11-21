@@ -8,6 +8,7 @@ import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.compo
 import { toggleCasePipe } from './pipes/toggle-case.pipe';
 import { OrderComponent } from './pages/order/order.component';
 import { CanFlyPipe } from './pipes/can-fly.pipe';
+import { sortByPipe } from './pipes/sort-by.pipe';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ OrderComponent,
 
 //pipes
 toggleCasePipe,
-CanFlyPipe
+CanFlyPipe,
+sortByPipe
 ]
 })
 export class ProductsModule { }
