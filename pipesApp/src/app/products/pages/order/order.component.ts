@@ -9,5 +9,9 @@ import { MenuItem } from 'primeng/api';
 export class OrderComponent   {
   public menuItems: MenuItem[]=[];
 
+public isUpperCase:boolean=false;
 
+toggleUpercase():void{
+  this.isUpperCase = !this.isUpperCase;
+}
 }
